@@ -5,6 +5,10 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = 8000;
 
+var cors = require('cors')
+
+app.use(cors())
+
 const uri = "mongodb+srv://vp6514764:kHO64evsoP57WUCq@test.khpg1.mongodb.net/?retryWrites=true&w=majority&appName=Test"
 const dbName = 'Test';
 
